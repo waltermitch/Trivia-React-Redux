@@ -1,0 +1,26 @@
+.App {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  font-family: "Inter-SemiBold", "Inter", sans-serif;
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+.hamburger-toggle {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 11;
+}
+
+
+@media only screen and (max-width: 800px) {
+  /* For mobile phones: */
+  .App {
+    display: block;
+  }
+}

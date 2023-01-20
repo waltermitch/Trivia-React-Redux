@@ -1,0 +1,227 @@
+.previous-question-result {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 660px;
+    margin-top: -30px;
+    max-width: 884px;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 1.2;
+    border-radius: 0 0 30px 30px;
+}
+
+.previous-question-result::before, .previous-question-result::after {
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.previous-question-result::before {
+    background-repeat: no-repeat;
+    border-radius: 0 0 30px 30px;
+}
+
+.previous-question-result::after {
+    background-repeat: no-repeat;
+    top: 50% !important;
+    height: 50%;
+    background-position: 0 100%;
+    background-size: 100% 200%;
+    border-radius: 0 0 30px 30px;
+}
+
+.previous-question-result.correct::before {
+    background-color: #157670;
+    background-image: linear-gradient(180deg, transparent 50%, #157670 50%), linear-gradient(191deg, transparent 50%, #1E7B76 50%), linear-gradient(202deg, transparent 50%, #157670 50%), linear-gradient(213deg, transparent 50%, #1E7B76 50%), linear-gradient(224deg, transparent 50%, #157670 50%), linear-gradient(235deg, transparent 50%, #1E7B76 50%), linear-gradient(246deg, transparent 50%, #157670 50%), linear-gradient(257deg, transparent 50%, #1E7B76 50%), linear-gradient(268deg, transparent 50%, #157670 50%), linear-gradient(279deg, transparent 50%, #1E7B76 50%), linear-gradient(290deg, transparent 50%, #157670 50%), linear-gradient(301deg, transparent 50%, #1E7B76 50%), linear-gradient(312deg, transparent 50%, #157670 50%), linear-gradient(323deg, transparent 50%, #1E7B76 50%), linear-gradient(334deg, transparent 50%, #157670 50%), linear-gradient(345deg, transparent 50%, #1E7B76 50%), linear-gradient(356deg, transparent 50%, #157670 50%);
+}
+.previous-question-result.correct::after {
+    background-color: #157670;
+    background-image: linear-gradient(0deg, transparent 50%, #157670 50%), linear-gradient(11deg, transparent 50%, #1E7B76 50%), linear-gradient(22deg, transparent 50%, #157670 50%), linear-gradient(33deg, transparent 50%, #1E7B76 50%), linear-gradient(44deg, transparent 50%, #157670 50%), linear-gradient(55deg, transparent 50%, #1E7B76 50%), linear-gradient(66deg, transparent 50%, #157670 50%), linear-gradient(77deg, transparent 50%, #1E7B76 50%), linear-gradient(88deg, transparent 50%, #157670 50%), linear-gradient(99deg, transparent 50%, #1E7B76 50%), linear-gradient(110deg, transparent 50%, #157670 50%), linear-gradient(121deg, transparent 50%, #1E7B76 50%), linear-gradient(132deg, transparent 50%, #157670 50%), linear-gradient(143deg, transparent 50%, #1E7B76 50%), linear-gradient(154deg, transparent 50%, #157670 50%), linear-gradient(165deg, transparent 50%, #1E7B76 50%), linear-gradient(176deg, transparent 50%, #157670 50%);
+}
+
+.previous-question-result.wrong::before {
+    background-color: #A3245A;
+    background-image: linear-gradient(180deg, transparent 50%, #A3245A 50%), linear-gradient(191deg, transparent 50%, #A72D60 50%), linear-gradient(202deg, transparent 50%, #A3245A 50%), linear-gradient(213deg, transparent 50%, #A72D60 50%), linear-gradient(224deg, transparent 50%, #A3245A 50%), linear-gradient(235deg, transparent 50%, #A72D60 50%), linear-gradient(246deg, transparent 50%, #A3245A 50%), linear-gradient(257deg, transparent 50%, #A72D60 50%), linear-gradient(268deg, transparent 50%, #A3245A 50%), linear-gradient(279deg, transparent 50%, #A72D60 50%), linear-gradient(290deg, transparent 50%, #A3245A 50%), linear-gradient(301deg, transparent 50%, #A72D60 50%), linear-gradient(312deg, transparent 50%, #A3245A 50%), linear-gradient(323deg, transparent 50%, #A72D60 50%), linear-gradient(334deg, transparent 50%, #A3245A 50%), linear-gradient(345deg, transparent 50%, #A72D60 50%), linear-gradient(356deg, transparent 50%, #A3245A 50%);
+}
+.previous-question-result.wrong::after {
+    background-color: #A3245A;
+    background-image: linear-gradient(0deg, transparent 50%, #A3245A 50%), linear-gradient(11deg, transparent 50%, #A72D60 50%), linear-gradient(22deg, transparent 50%, #A3245A 50%), linear-gradient(33deg, transparent 50%, #A72D60 50%), linear-gradient(44deg, transparent 50%, #A3245A 50%), linear-gradient(55deg, transparent 50%, #A72D60 50%), linear-gradient(66deg, transparent 50%, #A3245A 50%), linear-gradient(77deg, transparent 50%, #A72D60 50%), linear-gradient(88deg, transparent 50%, #A3245A 50%), linear-gradient(99deg, transparent 50%, #A72D60 50%), linear-gradient(110deg, transparent 50%, #A3245A 50%), linear-gradient(121deg, transparent 50%, #A72D60 50%), linear-gradient(132deg, transparent 50%, #A3245A 50%), linear-gradient(143deg, transparent 50%, #A72D60 50%), linear-gradient(154deg, transparent 50%, #A3245A 50%), linear-gradient(165deg, transparent 50%, #A72D60 50%), linear-gradient(176deg, transparent 50%, #A3245A 50%);
+}
+
+.previous-question-result .result-header {
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 420px;
+}
+
+.previous-question-result .result-header .score,
+.previous-question-result .result-header .rank {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.previous-question-result .result-header .score img {
+    width: 76px;
+    height: 86px;
+}
+
+.previous-question-result .result-header .rank img {
+    width: 76px;
+    height: 86px;
+}
+
+.previous-question-result .result-header .correct-icon {
+    flex: 1;
+    object-fit: contain;
+    width: 87px;
+    height: 96px;
+}
+
+.previous-question-result .result-header .wrong-icon {
+    width: 29px;
+    height: 28px;
+}
+
+.previous-question-result .ribbon-top {
+    position: relative;
+    margin-top: 20px;
+    align-self: center;
+    width: 305px;
+    height: 56px;
+    aspect-ratio: 5.446428571428571 / 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.previous-question-result .ribbon-top.correct {
+    background-image: url(../../assets/ribbonYellow.png);
+}
+.previous-question-result .ribbon-top.wrong {
+    background-image: url(../../assets/ribbonRed.png);
+}
+
+.previous-question-result .ribbon-top span {
+    margin-top: -10px;
+    font-weight: 700;
+    font-family: "Inter-Bold", "Inter", sans-serif;
+    font-size: 22px;
+}
+
+.previous-question-result .ribbon-top.correct span {
+    color: #3d0000;
+}
+.previous-question-result .ribbon-top.wrong span {
+    color: #ffffff;
+}
+
+.previous-question-result .correct-answer {
+    z-index: 1;
+    color: white;
+    font-size: 24pt;
+    text-shadow: 2px 2px 4px #000000;
+    padding: 15px;
+}
+
+.previous-question-result .ribbon-bottom {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 305px;
+    height: 56px;
+}
+
+.previous-question-result .ribbon-bottom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 305px;
+    height: 56px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    transform: rotate(180deg);
+}
+
+.previous-question-result .ribbon-bottom.correct::before {
+    background-image: url(../../assets/ribbonYellow.png);
+}
+.previous-question-result .ribbon-bottom.wrong::before {
+    background-image: url(../../assets/ribbonRed.png);
+}
+
+.previous-question-result .ribbon-bottom img{
+    width: 22px;
+    height: 22px;
+    margin: 0 10px;
+}
+
+.previous-question-result .ribbon-bottom.wrong img{
+    filter: invert(1);
+}
+
+.previous-question-result .ribbon-bottom.correct span {
+    color: #3d0000;
+}
+.previous-question-result .ribbon-bottom.wrong span {
+    color: #ffffff;
+}
+
+.previous-question-result .ribbon-bottom span {
+    z-index: 2;
+    margin-top: 10px;
+    font-weight: 700;
+    font-family: "Inter-Bold", "Inter", sans-serif;
+    font-size: 22px;
+}
+
+.previous-question-result .answer {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 640px;
+    min-height: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.previous-question-result .answer span {
+    width: 90%;
+    font-weight: 500;
+    font-family: "Inter-Medium", "Inter", sans-serif;
+    color: #3d0000;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 1.2;
+    margin-top: 10px;
+}
+
+
+

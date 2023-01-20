@@ -1,0 +1,49 @@
+.footer {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+    background-color: #0C2B40;
+}
+
+.footer .disclaimer {
+    font-size: 11px;
+    color: white;
+    text-align: center;
+}
+
+.footer .copyright {
+    font-size: 12px;
+    color: white;
+}
+
+.footer .navigation {
+    margin-bottom: 7px;
+}
+
+.footer .navigation .footer-link{
+    padding: 0 5px 0 5px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .navigation .footer-link:hover{
+    text-decoration: underline;
+}
+
+.footer .navigation .selected {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+    /* For mobile phones: */
+    .footer {
+        position: static;
+    }
+}

@@ -1,0 +1,17 @@
+.emitter {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+}
+
+.emitter .particle {
+    transform: translateX(-20px) translateY(-20px) scale(0);
+    opacity: 0;
+    background-color: #4c9a0f;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 41px;
+    height: 41px;
+}

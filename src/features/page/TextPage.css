@@ -1,0 +1,25 @@
+.text-page {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-page .text-content {
+    color: #0c2b40;
+    margin-top: 50px;
+    margin-bottom: 110px;
+    padding: 0 10px;
+    max-width: 884px;
+}
+
+.text-page .logo {
+    margin-top: 60px;
+    width: 195px;
+    height: 92px;
+    aspect-ratio: 2.119565217391304 / 1;
+}
+
+.text-page h1 {
+    font-size: 40px;
+}

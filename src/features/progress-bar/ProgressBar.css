@@ -1,0 +1,30 @@
+.progress-bar {
+    z-index: 1;
+    width: 280px;
+    height: 26px;
+    position: relative;
+}
+
+.progress-container {
+    background: #A4EFF7;
+    border-radius: 13px;
+    height: 100%;
+    padding-top: 1px;
+}
+
+.progress-completed {
+    height: 21px;
+    margin-top: 2px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.progress-completed .correct {
+    background-color: #00DBFF;
+    border-bottom: 4px solid #00A0E5;
+}
+.progress-completed .wrong {
+    background-color: #fd4949;
+    border-bottom: 4px solid #e20101;
+}

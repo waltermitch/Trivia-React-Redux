@@ -1,0 +1,82 @@
+.overlay {
+    z-index: 3;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.goal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    min-height: 200px;
+    border-radius: 30px;
+}
+
+.goal::before, .goal::after {
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.goal::before {
+    background-image: linear-gradient(180deg, transparent 50%, #F8F8F8 50%), linear-gradient(191deg, transparent 50%, #FFFFFF 50%), linear-gradient(202deg, transparent 50%, #F8F8F8 50%), linear-gradient(213deg, transparent 50%, #FFFFFF 50%), linear-gradient(224deg, transparent 50%, #F8F8F8 50%), linear-gradient(235deg, transparent 50%, #FFFFFF 50%), linear-gradient(246deg, transparent 50%, #F8F8F8 50%), linear-gradient(257deg, transparent 50%, #FFFFFF 50%), linear-gradient(268deg, transparent 50%, #F8F8F8 50%), linear-gradient(279deg, transparent 50%, #FFFFFF 50%), linear-gradient(290deg, transparent 50%, #F8F8F8 50%), linear-gradient(301deg, transparent 50%, #FFFFFF 50%), linear-gradient(312deg, transparent 50%, #F8F8F8 50%), linear-gradient(323deg, transparent 50%, #FFFFFF 50%), linear-gradient(334deg, transparent 50%, #F8F8F8 50%), linear-gradient(345deg, transparent 50%, #FFFFFF 50%), linear-gradient(356deg, transparent 50%, #F8F8F8 50%);
+    background-repeat: no-repeat;
+    background-color: #F8F8F8;
+    border-radius: 30px;
+}
+
+.goal::after {
+    background-image: linear-gradient(0deg, transparent 50%, #F8F8F8 50%), linear-gradient(11deg, transparent 50%, #FFFFFF 50%), linear-gradient(22deg, transparent 50%, #F8F8F8 50%), linear-gradient(33deg, transparent 50%, #FFFFFF 50%), linear-gradient(44deg, transparent 50%, #F8F8F8 50%), linear-gradient(55deg, transparent 50%, #FFFFFF 50%), linear-gradient(66deg, transparent 50%, #F8F8F8 50%), linear-gradient(77deg, transparent 50%, #FFFFFF 50%), linear-gradient(88deg, transparent 50%, #F8F8F8 50%), linear-gradient(99deg, transparent 50%, #FFFFFF 50%), linear-gradient(110deg, transparent 50%, #F8F8F8 50%), linear-gradient(121deg, transparent 50%, #FFFFFF 50%), linear-gradient(132deg, transparent 50%, #F8F8F8 50%), linear-gradient(143deg, transparent 50%, #FFFFFF 50%), linear-gradient(154deg, transparent 50%, #F8F8F8 50%), linear-gradient(165deg, transparent 50%, #FFFFFF 50%), linear-gradient(176deg, transparent 50%, #F8F8F8 50%);
+    background-repeat: no-repeat;
+    background-color: #F8F8F8;
+    top: 50% !important;
+    height: 50%;
+    background-position: 0 100%;
+    background-size: 100% 200%;
+    border-radius: 30px;
+}
+
+.goal .ribbon {
+    z-index: 3;
+    margin-top: 30px;
+    width: 297px;
+    height: 93px;
+    overflow: visible;
+    aspect-ratio: 3.189189189189189 / 1;
+}
+
+.goal .trophy {
+    z-index: 3;
+    margin-top: 20px;
+    width: 162px;
+    height: 179px;
+    aspect-ratio: 0.9093484419263456 / 1;
+}
+
+.goal .message {
+    z-index: 3;
+    text-align: center;
+    margin-top: 20px;
+    white-space: normal;
+    font-weight: 700;
+    font-family: "Inter-Bold", "Inter", sans-serif;
+    color: #210808;
+    font-size: 20px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    width: 300px;
+}
